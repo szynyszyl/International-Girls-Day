@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <event-block sid="880588029756312">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="718948357126897" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="777485077360125">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="254891404935865" type="System">
+                            <param id="0" name="Object">Tools</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="179019044841985">
+            <conditions>
+                <condition id="0" name="On clicked" sid="425287033874629" type="ExportButton" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="569157785737225">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="264548780369788" type="Tools">
+                            <param id="0" name="Object">Box</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Write file" sid="949235661191370" type="NWjs">
+                            <param id="0" name="Path">&quot;C:\Users\Mateusz\Desktop\COOR.txt&quot;</param>
+                            <param id="1" name="Contents">Tools.X&amp;&quot; &quot;&amp;Tools.Y&amp;&quot; &quot;&amp; Tools.Angle&amp;&quot;;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>
